@@ -64,7 +64,9 @@ public class CompositeTest {
                 if(listPerson.get(i).getChildren().size() == 2) {
                     listFamilyHasTwoChildren.add(listPerson.get(i).getName() + "-" + listPerson.get(i).getSpouseName());
                 }
-
+                if(listPerson.get(i).getChildren().size() == 0) {
+                    listPersonOfTheLastGeneration.add(listPerson.get(i));
+                }
             }
         }
 
